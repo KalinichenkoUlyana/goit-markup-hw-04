@@ -103,8 +103,8 @@ img {
 .site-nav-item:last-child {
   margin-right: 0px;
 }
-.site-nav-item:hover,
-.site-nav-item:focus {
+.site-nav-item > .link:hover,
+.site-nav-item > .link:focus {
   color: var(--accent-color);
 }
 
@@ -156,7 +156,13 @@ img {
   text-align: center;
   fill: var(--primary-text-color);
 }
-.icon-contacts-mail:hover,
+.icon-contacts-mail {
+  fill: currentColor;
+}
+.icon-contacts-smartphone {
+  fill: currentColor;
+}
+/*.icon-contacts-mail:hover,
 .icon-contacts-mail:focus {
   fill: var(--accent-color);
 }
@@ -176,7 +182,9 @@ img {
     url('../images/hero.jpg');
   background-position: center;
   background-size: cover;
-  width: 1600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-title {
   margin-bottom: 30px;
@@ -343,14 +351,14 @@ img {
   background-color: var(--accent-color);
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
+
   border-radius: 4px;
 }
 .clients-list {
@@ -358,17 +366,19 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.clients-logo {
-  fill: #afb1b8;
+
+.clients-link {
+  color: #afb1b8;
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
-.clients-logo:hover,
-.clients-logo :focus {
-  fill: var(--accent-color);
+.clients-logo {
+  fill: currentColor;
 }
+
 /*---Footer---*/
 .adress {
   padding-top: 60px;
@@ -454,7 +464,7 @@ img {
   margin-right: 8px;
 }
 .galery-list-button:hover,
-.galery-list-buttons:focus {
+.galery-list-button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   cursor: pointer;
@@ -475,6 +485,11 @@ img {
   color: var(--title-text-color);
   border: 0;
 }
+.galery-link:hover,
+.galery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .galery-images {
   display: flex;
   flex-wrap: wrap;
@@ -483,11 +498,7 @@ img {
 .galery-item {
   flex-basis: calc((100% - 60px) / 3);
 }
-.galery-item:hover,
-.galery-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .galery-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
