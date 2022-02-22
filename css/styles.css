@@ -137,7 +137,7 @@ img {
 .contacts-list:last-child {
   margin-right: 0px;
 }
-.contacts {
+.contacts-header-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,14 +147,23 @@ img {
   height: 12px;
   margin-right: 10px;
   text-align: center;
+  fill: var(--primary-text-color);
 }
 .icon-contacts-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   text-align: center;
+  fill: var(--primary-text-color);
 }
-
+.icon-contacts-mail:hover,
+.icon-contacts-mail:focus {
+  fill: var(--accent-color);
+}
+.icon-contacts-smartphone:hover,
+.icon-contacts-smartphone:focus {
+  fill: var(--accent-color);
+}
 /*---Hero---*/
 .hero,
 .adress {
@@ -205,6 +214,22 @@ img {
 .member-list-description {
   background-color: var(--main-background-color);
 }
+.main-text-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+}
+
+.main-text-images-items {
+  width: 70px;
+  height: 70px;
+}
+
 .main-text {
   display: flex;
   margin-left: -30px;
@@ -273,6 +298,8 @@ img {
 .members-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .members-name {
@@ -289,6 +316,58 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-background-color);
+  border-radius: 50%;
+}
+.social-list-link {
+  fill: #afb1b8;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--main-background-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-logo {
+  fill: #afb1b8;
+}
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--accent-color);
+}
+.clients-logo:hover,
+.clients-logo :focus {
+  fill: var(--accent-color);
 }
 /*---Footer---*/
 .adress {
@@ -317,6 +396,30 @@ img {
 }
 .adress-list {
   margin-top: 20px;
+}
+.invent {
+  width: 206px;
+  height: 80px;
+
+  margin-left: 70px;
+}
+.invent-footer {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.link-footer {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--main-background-color);
 }
 
 /*---Portfolio---*/
