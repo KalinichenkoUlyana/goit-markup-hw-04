@@ -216,7 +216,10 @@ img {
   color: #ffffff;
   cursor: pointer;
 }
-
+.main-button:hover,
+.main-button:focus {
+  background-color: #188ce8;
+}
 /*---Main-text---*/
 .text,
 .member-list-description {
@@ -486,7 +489,7 @@ img {
   border: 0;
 }
 
-..galery-link {
+.galery-link {
   display: block;
 }
 .galery-link:hover,
